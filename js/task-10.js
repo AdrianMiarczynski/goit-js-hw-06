@@ -18,7 +18,7 @@ let divSize = 10;
 //
 
 // tworzenie obiektu z losowym kolorem
-const createObject = () => {
+const createBoxes = () => {
   let inputValue = inputEl.value;
   for (let i = 0; i < inputValue; i++) {
     let divEl = document.createElement("div");
@@ -28,14 +28,14 @@ const createObject = () => {
     box.append(divEl);
     divValue += divSize;
   }
-};``
+};
 
 // usuwanie divów
-const delateObject = () => {
+const destroyBoxes = () => {
   // box.remove();
   box.textContent = "";
 };
 
 // wywoływanie funkcji
-createBtn.addEventListener("click", createObject);
-deleteBtn.addEventListener("click", delateObject);
+createBtn.addEventListener("click", createBoxes);
+deleteBtn.addEventListener("click", destroyBoxes);

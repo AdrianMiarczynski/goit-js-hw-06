@@ -5,9 +5,9 @@ console.log(outputSpan.textContent);
 
 input.addEventListener("input", () => {
   let name = document.getElementById("name-input").value;
-  if ((name === "")) {
+  if (name === "") {
     document.getElementById("name-output").innerHTML = "Anonymous";
   } else {
-      document.getElementById("name-output").innerHTML = input.value
+    document.getElementById("name-output").innerHTML = input.value;
   }
 });

@@ -34,6 +34,7 @@ const createBoxes = () => {
 const destroyBoxes = () => {
   // box.remove();
   box.textContent = "";
+  inputEl.value = "";
 };
 
 // wywoływanie funkcji
